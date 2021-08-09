@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+COVID-19 Dashboard - State
+{% endblock title %}
+{% block css %}
+<link href="{% static "css/state.css" %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+<h3 class="text-center">{{state}}</h3><br>
+
+{% comment %} <div class="container mb-5 text-center" id="col-map">
+	{% include "Perak.html" %}
+	{% block map %}
+	{% endblock %}
+</div> {% endcomment %}
+
+<div class="container">
+  	<div class="row">
+		<div class="col border text-center text-danger pb-2">
+			<h5 class="mt-2">Confirmed</h5>
+			<h3>{{confirmed}}</h3>
+			<p>{{daily_infected}}</p>
+		</div>
+		<div class="col border text-center pb-2">
+			<h5 class="mt-2">Deaths</h5>
+			<h3>{{deaths}}</h3>
+			<p>{{daily_deaths}}</p>
+		</div>
+		<div class="col border text-center text-success pb-2">
+			<h5 class="mt-2">Recovered</h5>
+			<h3>{{recovered}}</h3>
+		</div>
+		<div class="col border text-center text-info pb-2">
+			<h5 class="mt-2">Treatment</h5>
+			<h3>{{treatment}}</h3>
+		</div>
+  	</div>
+</div>
+<p class="text-center"><small>Updated on: {{date}}</small></p>
+
+{% if districts|length > 1 %}
+<div class="container mt-5">
+    <div class="row">
+		<caption>Number of cases based on district</caption>
+		<table class="table table-bordered table-sm">
+			<thead>
+				<tr>
+					<th scope="col">District</th>
+					<th scope="col">Active</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for district in districts %}
+					{% if district.2.Zone_colour == 1 %}
+						<tr class="green_background">
+							<td>{{district.0}}</td>
+							{% if district.1.Active_cases != None %}
+								<td>{{district.1.Active_cases}}</td>
+							{% else %}
+								<td>-</td>
+							{% endif %}
+						</tr>
+					{% elif  district.2.Zone_colour == 3 %}
+						<tr class="red_background">
+							<td>{{district.0}}</td>
+							{% if district.1.Active_cases != None %}
+								<td>{{district.1.Active_cases}}</td>
+							{% else %}
+								<td>-</td>
+							{% endif %}
+						</tr>
+					{% elif  district.2.Zone_colour == 2%}
+						<tr class="yellow_background">
+							<td>{{district.0}}</td>
+							{% if district.1.Active_cases != None %}
+								<td>{{district.1.Active_cases}}</td>
+							{% else %}
+								<td>-</td>
+							{% endif %}
+						</tr>
+					{% endif %}
+				{% endfor %}
+			</tbody>
+		</table>
+    </div>
+	<p class="text-center"><small>Updated on: {{district_date}}</small></p>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+nav{
+ background-color: rgb(128, 158, 255);
+}
+
+#nav_font{
+  font-size: 1.10em;
+}
+
+.absolute-right {
+  position: absolute;
+  top: auto;
+  right: 5%;
+  bottom: auto;
+}
+
+.absolute-left {
+  position: absolute;
+  top: auto;
+  left: 5%;
+  bottom: auto;
+}
+
+.site-footer
+{
+  margin-top: auto;
+  background-color: rgb(128, 158, 255);
+  font-size:1em;
+  line-height:24px;
+  color: black;
+  width: 100%;
+}

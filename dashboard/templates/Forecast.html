@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+COVID-19 prediction in Malaysia
+{% endblock title %}
+{% block css %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" type="text/javascript"></script>
+   	<link href="{% static "css/forecast.css" %}" rel="stylesheet" type="text/css" />
+   	<script src="{% static "js/chart.js" %}" type="text/javascript"></script>
+{% endblock %}
+{% block content %}
+<h3 class="p-3 pb-5 text-center"> Malaysia's COVID19 Forecast up to {{last_forecast_date}}</h3>
+<div class="container py-5 my-2" id="graph_style">
+	<p>No. of daily infected cases</p>
+	<canvas id="daily_infected"></canvas>
+	<script>
+		dailyInfectedCasesChart({{all_cases|safe}}, {{forecast_my|safe}});
+	</script>
+</div>
+<div class="container">
+  <div class="row">
+    <h5>Zone transition for each state</h5>
+    <table class="table table-bordered table-sm">
+      <thead>
+        <tr>
+          <th scope="col">State</th>
+          {% for zone in state_zones.Selangor %}
+            {% if forloop.counter0 == 0 %}
+              <th scope="col">{{zone.Date}} (Current)</th>
+            {% else %}
+              <th scope="col">{{zone.Date}}</th>
+            {% endif %}
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+				{% for key, value in state_zones.items %}
+          <tr>
+            <td>{{key}}</td>
+            {% for zone in value%}
+              {% if zone.Zone_colour  == 1 %}
+                <td><span class="indicator bg-green center"></span></td>
+              {% elif  zone.Zone_colour == 2 %}
+                <td><span class="indicator bg-yellow center"></span></td>
+              {% elif zone.Zone_colour == 3 %}
+                <td><span class="indicator bg-red center" ></span></td>
+              {% endif %}
+            {% endfor %}
+          </tr>
+			  {% endfor %}
+			</tbody>
+    </table>
+  </div>
+</div>  
+{% endblock %}

@@ -1,0 +1,14 @@
+{
+  "testedPositive": 9334,
+  "recovered": 9048,
+  "activeCases": 160,
+  "inICU": 7,
+  "respiratoryAid": 5,
+  "deceased": 126,
+  "country": "Malaysia",
+  "historyData": "https://api.apify.com/v2/datasets/7Fdb90FMDLZir2ROo/items?format=json&clean=1",
+  "sourceUrl": "http://covid-19.moh.gov.my/",
+  "lastUpdatedAtApify": "2020-08-31T01:25:00.000Z",
+  "lastUpdatedAtSource": "2020-08-30T09:15:00.000Z",
+  "readMe": "https://apify.com/zuzka/covid-my"
+}

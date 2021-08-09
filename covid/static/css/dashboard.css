@@ -1,0 +1,152 @@
+:root {
+  --red: #FF4E71;
+  --yellow: #FFFF5C;
+  --green: #18E19B;
+}
+
+#graph_style{
+  font-size: 1.30em;
+  font-style: oblique ;
+  color: rgb(56, 20, 189);
+}
+
+#subtitle{
+  font-size: 1.30em;
+  font-style: oblique;
+  color: rgb(56, 20, 189);
+}
+
+#caption{
+  font-size: 1.30em;
+  font-style: oblique;
+  color: rgb(56, 20, 189);
+}
+
+.red_background{
+  background-color: var(--red);
+}
+
+.yellow_background{
+  background-color: var(--yellow);
+}
+
+.green_background{
+  background-color: var(--green);
+}
+
+.red_background:hover{
+  background-color: #e43b73;
+
+}
+
+.green_background:hover{
+  background-color: #19ce8f;
+}
+
+.yellow_background:hover{
+  background-color:  #dfdf34;
+}
+
+.absolute-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.absolute-top-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.absolute-bottom-center {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.absolute-bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.absolute-bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#col-map {
+  position: relative;
+  height: calc(100vh - 220px);
+}
+
+.text-last-updated {
+  margin-bottom: 0;
+}
+
+.text-copyright {
+  font-size: .85em;
+}
+
+.indicator {
+  display: inline-block;
+  width: .8em;
+  height: .8em;
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* 
+@media (min-width: 768px) {
+  .absolute-md-top-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: auto;
+  }
+}  */
+
+@media(max-width: 768px){
+  .indicator-sm {
+    display: inline-block;
+    width: .4em;
+    height: .4em;
+  }
+
+  .text-legend {
+    font-size: .5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-copyright {
+      font-size: .75em;
+  }
+
+  .indicator {
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+  }
+}

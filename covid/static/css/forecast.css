@@ -1,0 +1,35 @@
+#graph_style{
+    font-size: 1.30em;
+    font-style: oblique ;
+    color: rgb(56, 20, 189);
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.indicator {
+    display: inline-block;
+    width: 80%;
+    height: 90%;
+}
+
+.bg-green {
+    background-color:#18E19B;
+}
+  
+.bg-yellow{
+    background-color: #FFFF5C ;
+}
+
+.bg-red{
+    background-color: #FF4E71;
+}
+
+.center {
+   display:block;
+   text-align:center; 
+   margin:0 auto;
+}

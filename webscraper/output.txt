@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="max-age=600" http-equiv="Cache-Control">
+   <meta content="width=device-width, initial-scale=1" name="viewport"/>
+   <!--    <meta property="og:title" content="Malaysia Covid-19 Portal 马来西亚新冠肺炎网站">
+    <meta property="og:description" content="This website focus on information about Covid-19 in Malaysia, including latest news, up to date statistic, and infected locations. English & Chinese language available. Please share it out!">
+    <meta property="og:image" content="http://covid-19.livephotos123.com/images/header2.jpg">    -->
+   <title>
+    Malaysia Covid-19 Portal 马来西亚新冠肺炎网站
+   </title>
+   <meta content=" 新增 17 宗案例，累计 9334 宗。死亡再添 1宗。. - Malaysia Covid-19 Portal" property="og:title"/>
+   <meta content="大马今天 30/08 新增 17 宗新冠肺炎案例，至今累计 9334 案例。死亡安例再添 1宗，累计共 126 宗。" property="og:description"/>
+   <meta content="http://covid-19.livephotos123.com/images/header2.jpg" property="og:image"/>
+   <meta content="_csrf-livephotos" name="csrf-param"/>
+   <meta content="kYdrl_c58hnf7jS66uE5qOr0Rgit3ufpWt7RHACm7UnU_g_cxnW9LueCWvKjs3GFkI1yfeqbqa9vvOZTaJXZPQ==" name="csrf-token"/>
+   <link href="/assets/110455ad/css/font-awesome.min.css" rel="stylesheet"/>
+   <link href="/assets/8bd78c3c/css/bootstrap.css" rel="stylesheet"/>
+   <link href="/css/site.css" rel="stylesheet"/>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-142558699-1">
+   </script>
+   <script>
+    window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142558699-1');
+   </script>
+  </meta>
+ </head>
+ <body>
+  <div class="wrap">
+   <div class="row-fluid">
+    <!--	<div class="col-xs-12 text-center" style="background-color: #333; color: #fff; padding: 10px 0; vertical-align: middle;">
+	    Our site needs your support to continue its operation. <a class="btn btn-danger btn-sm" target="_blank" href="https://paypal.me/kiankhoon" >Paypal</a>
+	</div>       -->
+    <div class="row-fluid">
+     <img class="img-responsive" src="/images/header2.jpg"/>
+    </div>
+   </div>
+   <div class="container text-center">
+    <div class="col-xs-12" style="padding:10px;">
+     <a href="/en-us/site/index">
+      English
+     </a>
+     |
+     <a href="/zh-cn/site/index">
+      中文
+     </a>
+    </div>
+   </div>
+   <header class="scroll text-center" style="padding: 10px; background-color: #333;">
+    <nav>
+     <a href="/" style="width: 20px;">
+      Home
+     </a>
+     <a href="/stats">
+      Statistics
+     </a>
+     <a href="/state">
+      States
+     </a>
+     <a href="/news">
+      Latest News
+     </a>
+     <a href="/red-zones">
+      Red Zones
+     </a>
+     <a href="/places">
+      Infected Places
+     </a>
+    </nav>
+   </header>
+   <div class="container">
+    <div class="row-fluid" style="padding: 10px;">
+     <div class="row-fluid" style="padding: 10px;">
+      <div class="col-xs-12 col-md-6" id="map">
+       <iframe allow="encrypted-media" allowtransparency="true" frameborder="0" height="35" scrolling="no" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcovid19inmalaysia&amp;width=450&amp;layout=standard&amp;action=like&amp;size=small&amp;share=true&amp;height=35&amp;appId=286363148042205" style="border:none;overflow:hidden" width="100%">
+       </iframe>
+      </div>
+      <div class="col-xs-12 col-md-6 text-center" style="padding: 10px;">
+       <div class="col-xs-4 col-md-4 text-center" style="padding-top: 20px; text-align: center">
+        <span class="sub-title">
+         Infected
+        </span>
+        <span class="number-title danger count">
+         9334
+        </span>
+        <span class="danger">
+         <i class="fa fa-arrow-up">
+         </i>
+         17
+        </span>
+        <br/>
+       </div>
+       <div class="col-xs-4 col-md-4" style="padding-top: 20px; text-align: center">
+        <span class="sub-title">
+         Recovered
+        </span>
+        <span class="number-title success count">
+         9048
+        </span>
+        <span class="success">
+         <i class="fa fa-arrow-up">
+         </i>
+         10
+        </span>
+       </div>
+       <div class="col-xs-4 col-md-4" style="padding-top: 20px; text-align: center">
+        <span class="sub-title">
+         Active
+        </span>
+        <span class="number-title warning count">
+         160
+        </span>
+        <span class="danger">
+         <i class="fa fa-arrow-up">
+         </i>
+         6
+        </span>
+       </div>
+       <div class="col-xs-4 col-md-4" style="padding-top: 20px; text-align: center">
+        <span class="sub-title">
+         ICU
+        </span>
+        <span class="number-title count" style="color: #084B8A">
+         7
+        </span>
+        <span class="success">
+         <i class="fa fa-arrow-down">
+         </i>
+         -1
+        </span>
+       </div>
+       <div class="col-xs-4 col-md-4" style="padding-top: 20px; text-align: center">
+        <span class="sub-title">
+         Ventilator
+        </span>
+        <span class="number-title count" style="color: #670190">
+         5
+        </span>
+        <span class="success">
+         <i class="fa fa-arrow-down">
+         </i>
+         -1
+        </span>
+       </div>
+       <div class="col-xs-4 col-md-4" style="padding-top: 20px; text-align: center">
+        <span class="sub-title">
+         Deaths
+        </span>
+        <span class="number-title info count">
+         126
+        </span>
+        <span class="danger">
+         <i class="fa fa-arrow-up">
+         </i>
+         1
+        </span>
+       </div>
+       <div class="row">
+        <div class="col-xs-12 text-center" style="padding-top:20px;">
+         <a class="btn btn-danger" href="/stats">
+          Detailed Statistic
+         </a>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-xs-12 text-center" style="padding-top:20px;">
+         Last update: 30/08/2020
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row-fluid" style="padding: 10px;">
+      <div class="col-xs-12 col-md-6" style="margin-top: 20px;">
+       <div class="apexcharts-container" id="w0">
+        <widget-apexcharts :chart-options="chartOptions" :height="height" :series="series" :type="type" :width="width">
+        </widget-apexcharts>
+       </div>
+      </div>
+      <div class="col-xs-12 col-md-6" style="margin-top: 20px; margin-bottom: 72px;">
+       <a href="https://events.nearbymii.com" target="_blank">
+        <img class="img-responsive" src="https://www.nearbymii.com/images/events_ads.jpg"/>
+       </a>
+      </div>
+     </div>
+     <div class="row-fluid" style="margin: 20px 0 20px 0;">
+      <div class="col-md-4 col-xs-12" style="padding: 10px;">
+       <!--------------------------------------------  Cases by States --------------------------------->
+       <div class="row" style="border-bottom: 2px #888 solid; margin: 2px;">
+        <div class="col-xs-8">
+         <h3>
+          Cases by State
+          <br/>
+          <small>
+           30/08/2020
+          </small>
+         </h3>
+        </div>
+        <div class="col-xs-4 text-right" style="margin-top: 40px;">
+         <a class="btn btn-danger" href="/red-zones">
+          More
+          <i class="fa fa-caret-right">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div data-pjax-container="" data-pjax-push-state="" data-pjax-timeout="1000" id="p0">
+        <div class="grid-header table-responsive" id="w1">
+         <table class="table table-striped table-bordered">
+          <thead>
+           <tr>
+            <th>
+             <a data-sort="state" href="/en/site/index?sort=state">
+              State
+             </a>
+            </th>
+            <th>
+             <a data-sort="infected_new" href="/en/site/index?sort=infected_new">
+              Infected New
+             </a>
+            </th>
+            <th>
+             <a class="desc" data-sort="infected" href="/en/site/index?sort=infected">
+              Infected
+             </a>
+            </th>
+            <th>
+             <a data-sort="deaths" href="/en/site/index?sort=deaths">
+              Deaths
+             </a>
+            </th>
+           </tr>
+          </thead>
+          <tfoot>
+           <tr>
+            <td>
+             Total.
+            </td>
+            <td>
+             17
+            </td>
+            <td>
+             9334
+            </td>
+            <td>
+             126
+            </td>
+           </tr>
+          </tfoot>
+          <tbody>
+           <tr data-key="2229">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Kuala Lumpur
+             </strong>
+            </td>
+            <td style="text-align: center">
+             14
+            </td>
+            <td style="text-align: center">
+             2587
+            </td>
+            <td style="text-align: center">
+             18
+            </td>
+           </tr>
+           <tr data-key="2235">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Selangor
+             </strong>
+            </td>
+            <td style="text-align: center">
+             1
+            </td>
+            <td style="text-align: center">
+             2167
+            </td>
+            <td style="text-align: center">
+             24
+            </td>
+           </tr>
+           <tr data-key="2226">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              N.Sembilan
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             1034
+            </td>
+            <td style="text-align: center">
+             8
+            </td>
+           </tr>
+           <tr data-key="2240">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Johor
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             751
+            </td>
+            <td style="text-align: center">
+             21
+            </td>
+           </tr>
+           <tr data-key="2241">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Sarawak
+             </strong>
+            </td>
+            <td style="text-align: center">
+             1
+            </td>
+            <td style="text-align: center">
+             699
+            </td>
+            <td style="text-align: center">
+             19
+            </td>
+           </tr>
+           <tr data-key="2234">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Sabah
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             417
+            </td>
+            <td style="text-align: center">
+             8
+            </td>
+           </tr>
+           <tr data-key="2230">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Pahang
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             370
+            </td>
+            <td style="text-align: center">
+             7
+            </td>
+           </tr>
+           <tr data-key="2236">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Perak
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             269
+            </td>
+            <td style="text-align: center">
+             6
+            </td>
+           </tr>
+           <tr data-key="2237">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Melaka
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             262
+            </td>
+            <td style="text-align: center">
+             5
+            </td>
+           </tr>
+           <tr data-key="2227">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Kedah
+             </strong>
+            </td>
+            <td style="text-align: center">
+             1
+            </td>
+            <td style="text-align: center">
+             214
+            </td>
+            <td style="text-align: center">
+             2
+            </td>
+           </tr>
+           <tr data-key="2239">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Kelantan
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             160
+            </td>
+            <td style="text-align: center">
+             3
+            </td>
+           </tr>
+           <tr data-key="2233">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              P.Pinang
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             136
+            </td>
+            <td style="text-align: center">
+             1
+            </td>
+           </tr>
+           <tr data-key="2232">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Terengganu
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             114
+            </td>
+            <td style="text-align: center">
+             1
+            </td>
+           </tr>
+           <tr data-key="2238">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Putrajaya
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             99
+            </td>
+            <td style="text-align: center">
+             1
+            </td>
+           </tr>
+           <tr data-key="2231">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Perlis
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             32
+            </td>
+            <td style="text-align: center">
+             2
+            </td>
+           </tr>
+           <tr data-key="2228">
+            <td class="col-xs-4" style="text-align: center">
+             <strong>
+              Labuan
+             </strong>
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+            <td style="text-align: center">
+             23
+            </td>
+            <td style="text-align: center">
+             0
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <!--------------------------------------------  Green States --------------------------------->
+       <div class="row" style="border-bottom: 2px #888 solid; margin: 2px;">
+        <div class="col-xs-12">
+         <h3>
+          Green States
+         </h3>
+        </div>
+       </div>
+       <table class="table table-striped-green">
+        <tbody>
+         <tr>
+          <td>
+           <a href="/state/view?id=Perak" style="color: #fff;">
+            <img src="/images/Perak.png" width="30px"/>
+            Perak
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Pahang" style="color: #fff;">
+            <img src="/images/Pahang.png" width="30px"/>
+            Pahang
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Terengganu" style="color: #fff;">
+            <img src="/images/Terengganu.png" width="30px"/>
+            Terengganu
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Kelantan" style="color: #fff;">
+            <img src="/images/Kelantan.png" width="30px"/>
+            Kelantan
+           </a>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <!--------------------------------------------  Zero new cases --------------------------------->
+       <div class="row" style="border-bottom: 2px #888 solid; margin: 2px;">
+        <div class="col-xs-12">
+         <h3>
+          States with zero new cases
+         </h3>
+        </div>
+       </div>
+       <table class="table table-striped-default">
+        <tbody>
+         <tr>
+          <td>
+           <a href="/state/view?id=Terengganu" style="color: #000;">
+            <img src="/images/Terengganu.png" width="30px"/>
+            Terengganu
+           </a>
+          </td>
+          <td>
+           44 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Pahang" style="color: #000;">
+            <img src="/images/Pahang.png" width="30px"/>
+            Pahang
+           </a>
+          </td>
+          <td>
+           35 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Kelantan" style="color: #000;">
+            <img src="/images/Kelantan.png" width="30px"/>
+            Kelantan
+           </a>
+          </td>
+          <td>
+           35 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Putrajaya" style="color: #000;">
+            <img src="/images/Putrajaya.png" width="30px"/>
+            Putrajaya
+           </a>
+          </td>
+          <td>
+           21 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Perak" style="color: #000;">
+            <img src="/images/Perak.png" width="30px"/>
+            Perak
+           </a>
+          </td>
+          <td>
+           20 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=N.Sembilan" style="color: #000;">
+            <img src="/images/N.Sembilan.png" width="30px"/>
+            N.Sembilan
+           </a>
+          </td>
+          <td>
+           15 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Labuan" style="color: #000;">
+            <img src="/images/Labuan.png" width="30px"/>
+            Labuan
+           </a>
+          </td>
+          <td>
+           11 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=P.Pinang" style="color: #000;">
+            <img src="/images/P.Pinang.png" width="30px"/>
+            P.Pinang
+           </a>
+          </td>
+          <td>
+           11 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Johor" style="color: #000;">
+            <img src="/images/Johor.png" width="30px"/>
+            Johor
+           </a>
+          </td>
+          <td>
+           11 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Sabah" style="color: #000;">
+            <img src="/images/Sabah.png" width="30px"/>
+            Sabah
+           </a>
+          </td>
+          <td>
+           8 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Perlis" style="color: #000;">
+            <img src="/images/Perlis.png" width="30px"/>
+            Perlis
+           </a>
+          </td>
+          <td>
+           5 days zero new case
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <a href="/state/view?id=Melaka" style="color: #000;">
+            <img src="/images/Melaka.png" width="30px"/>
+            Melaka
+           </a>
+          </td>
+          <td>
+           3 days zero new case
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="col-md-4 col-xs-12" style="padding: 10px;">
+       <!------------------ Headline -------------------->
+       <div class="row" style="border-bottom: 2px #888 solid; margin: 2px; padding-top: 20px;">
+        <div class="col-xs-8">
+         <h3>
+          Headlines
+         </h3>
+        </div>
+        <div class="col-xs-4 text-right">
+         <a class="btn btn-danger" href="/news" style="margin-top:15px;">
+          More
+          <i class="fa fa-caret-right">
+          </i>
+         </a>
+        </div>
+       </div>
+       <div style="border: 1px solid #ccc; border-radius: 0px; margin: 15px 0; ">
+        <div>
+         <img class="image-responsive" src="https://pbs.twimg.com/card_img/1299646748588044289/vyJOB4kF?format=jpg&amp;name=small" width="100%"/>
+        </div>
+        <div style="padding: 20px 20px 5px 20px; background-color: #FEEDED; border-left: 6px solid #d9534f;">
+         <h4 class="danger">
+          <strong>
+           11 new cases, no deaths
+          </strong>
+         </h4>
+         <h4>
+         </h4>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<a href="/news/state?NewsSearch%5Blocation%5D=National">
+ <img src="/images/National.png" width="30px"/>
+ National
+</a>
+<small>
+ <time data-toggle="timeago" datetime="2020-08-29T10:42:24+00:00">
+  Aug 29, 2020, 10:42:24 AM
+ </time>
+</small>
+The Health Ministry announced that as of 12pm today, there are 11 new Covid-19 cases, bringing the total number of infections to 9,317.
+
+Health Ministry director-general Tan Sri Dr Noor Hisham Abdullah said out of the 11 new cases, 10 were imported cases involving six Malaysians and four foreigners.
+
+These imported cases had returned from India, Indonesia and Qatar.
+<div class="row" style="padding: 10px 0; background-color: #FEEDED;">
+ <div class="text-right col-xs-12">
+  <a class="btn btn-danger btn-sm" href="https://www.thesundaily.my/local/covid-19-11-new-cases-no-deaths-XL3728022" target="_blank">
+   <i class="fa fa-file-text-o">
+   </i>
+   Source
+  </a>
+ </div>
+</div>
+<div style="border: 1px solid #ccc; border-radius: 0px; margin: 15px 0; ">
+ <div>
+  <img class="image-responsive" src="https://pbs.twimg.com/card_img/1299619417228152833/QaJOorep?format=jpg&amp;name=small" width="100%"/>
+ </div>
+ <div style="padding: 20px 20px 5px 20px; background-color: #FEEDED; border-left: 6px solid #d9534f;">
+  <h4 class="danger">
+   <strong>
+    79 nabbed nationwide on Friday for breaching RMCO
+   </strong>
+  </h4>
+  <h4>
+  </h4>
+ </div>
+</div>
+<a href="/news/state?NewsSearch%5Blocation%5D=National">
+ <img src="/images/National.png" width="30px"/>
+ National
+</a>
+<small>
+ <time data-toggle="timeago" datetime="2020-08-29T09:42:22+00:00">
+  Aug 29, 2020, 9:42:22 AM
+ </time>
+</small>
+Twenty-two people who attended a party were among 79 individuals arrested nationwide yesterday for violating the Recovery Movement Control Order (RMCO).
+
+Senior Minister (Security Cluster) Datuk Seri Ismail Sabri Yaakob said among those arrested were 18 people who failed to provide proper registration details at premises; and 17 who failed to wear masks in crowded areas.
+<div class="row" style="padding: 10px 0; background-color: #FEEDED;">
+ <div class="text-right col-xs-12">
+  <a class="btn btn-danger btn-sm" href="https://www.nst.com.my/news/nation/2020/08/620457/79-nabbed-nationwide-friday-breaching-rmco#.X0oMgQxfLmw.twitter" target="_blank">
+   <i class="fa fa-file-text-o">
+   </i>
+   Source
+  </a>
+ </div>
+</div>
+<div style="border: 1px solid #ccc; border-radius: 0px; margin: 15px 0; ">
+ <div>
+  <img class="image-responsive" src="https://pbs.twimg.com/card_img/1299253326014423040/Dq7MjpHg?format=jpg&amp;name=small" width="100%"/>
+ </div>
+ <div style="padding: 20px 20px 5px 20px; background-color: #FEEDED; border-left: 6px solid #d9534f;">
+  <h4 class="danger">
+   <strong>
+    With no end to Covid-19 in sight, Putrajaya extends recovery MCO until Dec 31
+   </strong>
+  </h4>
+  <h4>
+  </h4>
+ </div>
+</div>
+<a href="/news/state?NewsSearch%5Blocation%5D=National">
+ <img src="/images/National.png" width="30px"/>
+ National
+</a>
+<small>
+ <time data-toggle="timeago" datetime="2020-08-28T12:24:17+00:00">
+  Aug 28, 2020, 12:24:17 PM
+ </time>
+</small>
+The federal government has announced tonight that the recovery movement control order (RMCO) will be extended until December 31, as the Covid-19 pandemic has shown no sign of abating.
+
+“For your benefit, the government has decided that RMCO be extended until December 31, 2020,” Prime Minister Tan Sri Muhyiddin Yassin said in a special public address.
+<div class="row" style="padding: 10px 0; background-color: #FEEDED;">
+ <div class="text-right col-xs-12">
+  <a class="btn btn-danger btn-sm" href="https://www.malaymail.com/news/malaysia/2020/08/28/with-no-end-to-covid-19-in-sight-putrajaya-extends-recovery-mco-until-dec-3/1898149" target="_blank">
+   <i class="fa fa-file-text-o">
+   </i>
+   Source
+  </a>
+ </div>
+</div>
+<div class="col-md-4 col-xs-12" style="padding: 10px;">
+ <!----------------------------- Infected Places ------------------------------>
+ <div class="row" style="border-bottom: 2px #888 solid; margin: 2px;">
+  <div class="col-xs-8">
+   <h3>
+    Infected Places
+   </h3>
+  </div>
+  <div class="col-xs-4 text-right">
+   <a class="btn btn-danger" href="/places" style="margin-top:15px;">
+    More
+    <i class="fa fa-caret-right">
+    </i>
+   </a>
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Kuala Krau Pasaraya Mempaga Fresh
+    </strong>
+   </span>
+   <br/>
+   Pahang • 
+			Market
+   <br/>
+   <a href="https://www.google.com/maps/place/Mempaga+Fresh+Sdn+Bhd/@3.7340051,102.3626192,17z/data=!3m1!4b1!4m5!3m4!1s0x31c94be19e530185:0x79bb246c71c01dc!8m2!3d3.7339997!4d102.3648132" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.facebook.com/MEMPAGAFRESHKUALAKRAU/" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   04/06/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Cheras Pangsapuri Meranti
+    </strong>
+   </span>
+   <br/>
+   Selangor • 
+			Residential
+   <br/>
+   <a href="https://www.google.com/maps/place/Pangsapuri+Meranti/@3.0862519,101.7438284,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc35b15ab78d3f:0xe49c06bf76ccee49!8m2!3d3.0862465!4d101.7460224" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.sinchew.com.my/content/content_2282458.html" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   02/06/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Pasar Mentakab Pahang
+    </strong>
+   </span>
+   <br/>
+   Pahang • 
+			Market
+   <br/>
+   <a href="https://www.google.com/maps/place/Pasar+Mentakab/@3.4858297,102.3512528,18z/data=!3m1!4b1!4m5!3m4!1s0x31ceb9f6d3a2777d:0x4f42bcae0d8967df!8m2!3d3.4858297!4d102.3519051" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.enanyang.my/?p=1405587" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   11/05/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     KL MyTown Shopping Center
+    </strong>
+   </span>
+   <br/>
+   Kuala Lumpur • 
+			Mall
+   <br/>
+   <a href="https://www.google.com/maps/place/MyTOWN+Shopping+Centre/@3.1348631,101.7206542,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc363dccb07b07:0x959c26a50325031d!8m2!3d3.1348631!4d101.7228429" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://hype.my/2020/187447/mytown-shopping-centre-covid-19/" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   03/05/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Pasar Besar Seremban
+    </strong>
+   </span>
+   <br/>
+   N.Sembilan • 
+			Market
+   <br/>
+   <a href="https://www.google.com/maps/place/Pasar+Besar+Seremban/@2.7307274,101.9344069,17z/data=!3m1!4b1!4m5!3m4!1s0x31cddd82cb979fb7:0x586a5b99ae614974!8m2!3d2.7307274!4d101.9365956" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.thestar.com.my/news/nation/2020/05/03/covid-19-seremban-wet-market-closed-indefinitely-after-2-traders-test-positive" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   03/05/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Pasar Taman Megah, Petaling Jaya
+    </strong>
+   </span>
+   <br/>
+   Selangor • 
+			Market
+   <br/>
+   <a href="https://www.google.com/maps/place/Pasar+Taman+Megah+SS24/@3.1139544,101.608776,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc4eaa11750899:0x294f8787c0a147c9!8m2!3d3.113949!4d101.61097" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.nst.com.my/news/nation/2020/04/587664/taman-megah-market-closed-due-covid-19" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   27/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Petaling Jaya Pasar Besar Jalan Othman
+    </strong>
+   </span>
+   <br/>
+   Selangor • 
+			Market
+   <br/>
+   <a href="https://www.google.com/maps/place/Pasar+Besar+Jalan+Othman/@3.0874702,101.6432512,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc4b8b92a8dda1:0xff93b203cda7a6a0!8m2!3d3.0874648!4d101.6454452" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.malaymail.com/news/malaysia/2020/04/27/jalan-othman-wet-market-closed-after-trader-tests-positive-for-covid-19/1860555" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   27/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Kuching Simpang Tiga RHB Branch
+    </strong>
+   </span>
+   <br/>
+   Sarawak • 
+			Finance
+   <br/>
+   <a href="https://www.google.com/maps/place/RHB+Bank/@1.5348258,110.3544359,17z/data=!3m1!4b1!4m5!3m4!1s0x31fba70a9e5c94f3:0x64699bef0d99beb6!8m2!3d1.5348258!4d110.3566246" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.theedgemarkets.com/article/rhb-confirms-employee-simpang-tiga-branch-kuching-tested-positive-covid19" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   27/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Taman Seri Murni Fasa 1 Apartmen
+    </strong>
+   </span>
+   <br/>
+   Kuala Lumpur • 
+			Residential
+   <br/>
+   <a href="https://www.google.com/maps/place/Taman+Seri+Murni+Fasa+1+Apartment/@3.2347661,101.6602981,17z/data=!4m5!3m4!1s0x31cc4701e0998d2b:0x1cb311f5512da838!8m2!3d3.2344431!4d101.6615601" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.chinapress.com.my/?p=1997829" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   20/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Pizza Hut Jalan Bakri, Muar.
+    </strong>
+   </span>
+   <br/>
+   Johor • 
+			Private
+   <br/>
+   <a href="https://www.google.com/maps/place/Pizza+Hut+Jalan+Bakri/@2.0479654,102.5821041,17z/data=!3m1!4b1!4m5!3m4!1s0x31d1b9af000b6c2d:0x391cf4c8d72e8887!8m2!3d2.04796!4d102.5842928" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.sinchew.com.my/content/content_2254661.html" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   16/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     KK Pulau Gaya
+    </strong>
+   </span>
+   <br/>
+   Sabah • 
+			Residential
+   <br/>
+   <a href="https://www.google.com/maps/place/Gaya+Island/@6.0137602,116.0164009,13.83z/data=!4m5!3m4!1s0x323b41d07fe273d3:0xadb40f0f329b5193!8m2!3d6.0179966!4d116.0298475" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.thesundaily.my/covid-19/suicide-victim-in-pulau-gaya-tests-positive-for-covid-19-XD2252734" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   13/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Petaling Jaya Icon City Tower 3
+    </strong>
+   </span>
+   <br/>
+   Selangor • 
+			Residential
+   <br/>
+   <a href="https://www.google.com/maps/place/Icon+City,+47300+Petaling+Jaya,+Selangor/@3.0863873,101.6051271,15z/data=!4m5!3m4!1s0x31cc4c764e9315cf:0x1c79e5d7024a98df!8m2!3d3.086366!4d101.6138819" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.chinapress.com.my/?p=1986944" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   12/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Puchong Pangsapuri Seri Utama
+    </strong>
+   </span>
+   <br/>
+   Selangor • 
+			Residential
+   <br/>
+   <a href="https://www.google.com/maps/place/Pangsapuri+Seri+Utama/@2.9810617,101.603451,16z/data=!4m8!1m2!2m1!1sSeri+Utama+Condominium+Puchong!3m4!1s0x31cdb3f4178b3935:0xf945b92f5d5aee1b!8m2!3d2.9819258!4d101.6071161" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.sinchew.com.my/content/content_2251711.html" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   11/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     The Wharf Residence
+    </strong>
+   </span>
+   <br/>
+   Selangor • 
+			Residential
+   <br/>
+   <a href="https://www.google.com/maps/place/The+Wharf+Residence/@2.981719,101.6004095,17z/data=!3m1!4b1!4m5!3m4!1s0x31cdb391957dd99b:0x9b6ff72fd4246aec!8m2!3d2.9817136!4d101.6025982" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.sinchew.com.my/content/content_2251711.html" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   11/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     RHB Islamic Bank, Kelana Jaya
+    </strong>
+   </span>
+   <br/>
+   Selangor • 
+			Finance
+   <br/>
+   <a href="https://www.google.com/maps/place/RHB+Islamic+Bank/@3.1018339,101.5977495,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc4c10c1d06249:0x8105ce2c15fcb277!8m2!3d3.1018285!4d101.5999382" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.theedgemarkets.com/article/rhb-says-one-kelana-jaya-branch-staff-has-tested-positive-covid19" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   08/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Pasar Borong Selayang Lama
+    </strong>
+   </span>
+   <br/>
+   Selangor • 
+			Private
+   <br/>
+   <a href="https://www.google.com/maps/place/Pasar+Borong+Selayang+Lama/@3.2468143,101.663533,19z/data=!3m1!4b1!4m5!3m4!1s0x31cc471e5f9d974d:0xf3c3b846d5f0d0b1!8m2!3d3.2468143!4d101.6640802" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.sinchew.com.my/content/content_2249182.html" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   07/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Kampung Dato Ibrahim Majid, Simpang Renggam
+    </strong>
+   </span>
+   <br/>
+   Johor • 
+			Residential
+   <br/>
+   <a href="https://www.google.com/maps/place/Kg+Dato+Ibrahim+Majid+@Simpang+Rengam/@1.7645971,103.3047297,17z/data=!3m1!4b1!4m5!3m4!1s0x31d089c989199a2d:0x695e8d94a49f775d!8m2!3d1.7645917!4d103.3069237" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.sinchew.com.my/content/content_2249060.html" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   07/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Malayan Mansion
+    </strong>
+   </span>
+   <br/>
+   Kuala Lumpur • 
+			Residential
+   <br/>
+   <a href="https://www.google.com/maps/place/Malayan+Mansion/@3.152119,101.6964103,18z/data=!4m5!3m4!1s0x31cc482d4631a169:0xfe4135a3a582120d!8m2!3d3.15212!4d101.6966599" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.freemalaysiatoday.com/category/nation/2020/04/07/2-more-areas-in-kl-under-emco/" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   07/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Selangor Mansion
+    </strong>
+   </span>
+   <br/>
+   Kuala Lumpur • 
+			Residential
+   <br/>
+   <a href="https://www.google.com/maps/place/Selangor+Mansion,+City+Centre,+50100+Kuala+Lumpur,+Wilayah+Persekutuan+Kuala+Lumpur/@3.1521195,101.696277,18z/data=!3m1!4b1!4m5!3m4!1s0x31cc482d3a676d53:0x85b10c0c5473c3ee!8m2!3d3.1521195!4d101.6973713" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.freemalaysiatoday.com/category/nation/2020/04/07/2-more-areas-in-kl-under-emco/" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   07/04/20
+  </div>
+ </div>
+ <div class="row" style="margin: 5px 0 20px 0; border-radius: 10px; background-color: #fff;">
+  <div class="col-xs-12" style="padding-left: 10px; border-left: 6px solid #d9534f;">
+   <span style="font-size:17px;">
+    <strong>
+     Astro Outside Broadcast (OB Truck) transportation team
+    </strong>
+   </span>
+   <br/>
+   Kuala Lumpur • 
+			Private
+   <br/>
+   <a href="https://www.google.com/maps/place/Astro+Digital+5+Sdn.+Bhd./@3.0502267,101.7009992,16z/data=!4m5!3m4!1s0x31cc4a93eaaaaaab:0x772e3e914acb5a4d!8m2!3d3.0510062!4d101.6990605" style="margin-top:0px;" target="_blank">
+    <i class="fa fa-map-marker">
+    </i>
+    Map
+   </a>
+   •
+   <a href="https://www.astro.com.my/mediaroom/articledetails.aspx?id=1054&amp;title=statement-on-covid-19" target="_blank">
+    <i class="fa fa-file-text-o">
+    </i>
+    Source
+   </a>
+   •
+   <i class="fa fa-calendar">
+   </i>
+   06/04/20
+  </div>
+ </div>
+</div>
+<footer class="footer" style="margin-top: 20px;">
+ <div class="container">
+  <p class="pull-left">
+   ©
+   <a href="https://www.livephotos123.com" target="_blank">
+    Live Photos
+   </a>
+   JIM 2020
+  </p>
+  <p class="pull-right">
+   Powered by
+   <a href="http://www.mentalmodel.net" target="_blank">
+    Mental Model Sdn Bhd
+   </a>
+   ,
+   <a href="http://www.avmcloud.net">
+    AVM Cloud Sdn Bhd
+   </a>
+   &amp;
+   <a href="http://www.Modernience.com/">
+    Modern Convenience Sdn Bhd.
+   </a>
+  </p>
+ </div>
+</footer>
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+ (function () {
+        var options = {
+            facebook: "110307250644384", // Facebook page ID
+            call_to_action: "Message us", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+<script src="/js/mapdata.js">
+</script>
+<script src="/js/countrymap.js">
+</script>
+<script src="/assets/77b7fc59/vue.min.js">
+</script>
+<script src="/assets/6bc66da/build.js">
+</script>
+<script src="/assets/36f3dcb1/jquery.js">
+</script>
+<script src="/assets/e1f869f2/yii.js">
+</script>
+<script src="/assets/e1f869f2/yii.gridView.js">
+</script>
+<script src="/assets/89796e82/jquery.pjax.js">
+</script>
+<script src="/assets/c2322d85/jquery.timeago.js">
+</script>
+<script src="/assets/c2322d85/locales/jquery.timeago.en.js">
+</script>
+<script>
+ jQuery(function ($) {
+
+setTimeout(function(e) {
+  new Vue({
+  el: '#' + "w0",
+  data: function() {
+      return {
+          chartOptions: {"chart":{"toolbar":{"show":true}},"annotations":{"xaxis":[{"x":"1584464400000","strokeDashArray":0,"borderColor":"#333333","label":{"borderColor":"#333333","style":{"color":"#ffffff","background":"#333333"},"text":"MCO Started"}}]},"title":{"text":"Total Cases","align":"left"},"colors":["#AC0000","#008522","#F39300"],"xaxis":{"type":"datetime"},"markers":{"size":1},"dataLabels":{"enabled":false},"stroke":{"show":true},"legend":{"verticalAlign":"bottom","horizontalAlign":"left"}},
+          series: [{"name":"Infected","data":[["2020-01-24",3],["2020-01-25",4],["2020-01-26",4],["2020-01-27",4],["2020-01-28",7],["2020-01-29",7],["2020-01-30",8],["2020-01-31",8],["2020-02-01",8],["2020-02-02",8],["2020-02-03",8],["2020-02-04",10],["2020-02-05",12],["2020-02-06",14],["2020-02-07",15],["2020-02-08",16],["2020-02-09",17],["2020-02-10",18],["2020-02-11",18],["2020-02-12",18],["2020-02-13",19],["2020-02-14",19],["2020-02-15",22],["2020-02-16",22],["2020-02-17",22],["2020-02-18",22],["2020-02-19",22],["2020-02-20",22],["2020-02-21",22],["2020-02-22",22],["2020-02-23",22],["2020-02-24",22],["2020-02-25",22],["2020-02-26",22],["2020-02-27",24],["2020-02-28",25],["2020-02-29",29],["2020-03-01",29],["2020-03-02",33],["2020-03-03",36],["2020-03-04",50],["2020-03-05",55],["2020-03-06",83],["2020-03-07",93],["2020-03-08",99],["2020-03-09",117],["2020-03-10",129],["2020-03-11",149],["2020-03-12",158],["2020-03-13",197],["2020-03-14",238],["2020-03-15",428],["2020-03-16",553],["2020-03-17",673],["2020-03-18",790],["2020-03-19",900],["2020-03-20",1030],["2020-03-21",1183],["2020-03-22",1306],["2020-03-23",1518],["2020-03-24",1624],["2020-03-25",1796],["2020-03-26",2031],["2020-03-27",2161],["2020-03-28",2320],["2020-03-29",2470],["2020-03-30",2626],["2020-03-31",2766],["2020-04-01",2908],["2020-04-02",3116],["2020-04-03",3333],["2020-04-04",3483],["2020-04-05",3662],["2020-04-06",3793],["2020-04-07",3963],["2020-04-08",4119],["2020-04-09",4228],["2020-04-10",4346],["2020-04-11",4530],["2020-04-12",4683],["2020-04-13",4817],["2020-04-14",4987],["2020-04-15",5072],["2020-04-16",5182],["2020-04-17",5251],["2020-04-18",5305],["2020-04-19",5389],["2020-04-20",5425],["2020-04-21",5482],["2020-04-22",5532],["2020-04-23",5603],["2020-04-24",5691],["2020-04-25",5742],["2020-04-26",5780],["2020-04-27",5820],["2020-04-28",5851],["2020-04-29",5945],["2020-04-30",6002],["2020-05-01",6071],["2020-05-02",6176],["2020-05-03",6298],["2020-05-04",6353],["2020-05-05",6383],["2020-05-06",6428],["2020-05-07",6467],["2020-05-08",6535],["2020-05-09",6589],["2020-05-10",6656],["2020-05-11",6726],["2020-05-12",6742],["2020-05-13",6779],["2020-05-14",6819],["2020-05-15",6855],["2020-05-16",6872],["2020-05-17",6894],["2020-05-18",6941],["2020-05-19",6978],["2020-05-20",7009],["2020-05-21",7059],["2020-05-22",7137],["2020-05-23",7185],["2020-05-24",7245],["2020-05-25",7417],["2020-05-26",7604],["2020-05-27",7619],["2020-05-28",7629],["2020-05-29",7732],["2020-05-30",7762],["2020-05-31",7819],["2020-06-01",7857],["2020-06-02",7877],["2020-06-03",7970],["2020-06-04",8247],["2020-06-05",8266],["2020-06-06",8303],["2020-06-07",8322],["2020-06-08",8329],["2020-06-09",8336],["2020-06-10",8338],["2020-06-11",8369],["2020-06-12",8402],["2020-06-13",8445],["2020-06-14",8453],["2020-06-15",8494],["2020-06-16",8505],["2020-06-17",8515],["2020-06-18",8529],["2020-06-19",8535],["2020-06-20",8556],["2020-06-21",8572],["2020-06-22",8587],["2020-06-23",8590],["2020-06-24",8596],["2020-06-25",8600],["2020-06-26",8606],["2020-06-27",8616],["2020-06-28",8634],["2020-06-29",8637],["2020-06-30",8639],["2020-07-01",8640],["2020-07-02",8643],["2020-07-03",8648],["2020-07-04",8658],["2020-07-05",8663],["2020-07-06",8668],["2020-07-07",8674],["2020-07-08",8677],["2020-07-09",8683],["2020-07-10",8696],["2020-07-11",8704],["2020-07-12",8718],["2020-07-13",8725],["2020-07-14",8729],["2020-07-15",8734],["2020-07-16",8737],["2020-07-17",8755],["2020-07-18",8764],["2020-07-19",8779],["2020-07-20",8800],["2020-07-21",8815],["2020-07-22",8831],["2020-07-23",8840],["2020-07-24",8861],["2020-07-25",8884],["2020-07-26",8897],["2020-07-27",8904],["2020-07-28",8943],["2020-07-29",8956],["2020-07-30",8964],["2020-07-31",8976],["2020-08-01",8985],["2020-08-02",8999],["2020-08-03",9001],["2020-08-04",9002],["2020-08-05",9023],["2020-08-06",9038],["2020-08-07",9063],["2020-08-08",9070],["2020-08-09",9083],["2020-08-10",9094],["2020-08-11",9103],["2020-08-12",9114],["2020-08-13",9129],["2020-08-14",9149],["2020-08-15",9175],["2020-08-16",9200],["2020-08-17",9212],["2020-08-18",9219],["2020-08-19",9235],["2020-08-20",9240],["2020-08-21",9249],["2020-08-22",9257],["2020-08-23",9267],["2020-08-24",9274],["2020-08-25",9285],["2020-08-26",9291],["2020-08-27",9296],["2020-08-28",9306],["2020-08-29",9317],["2020-08-30",9334]]},{"name":"Recovered","data":[["2020-01-24",null],["2020-01-25",null],["2020-01-26",null],["2020-01-27",null],["2020-01-28",null],["2020-01-29",null],["2020-01-30",null],["2020-01-31",null],["2020-02-01",null],["2020-02-02",null],["2020-02-03",null],["2020-02-04",1],["2020-02-05",1],["2020-02-06",1],["2020-02-07",1],["2020-02-08",2],["2020-02-09",3],["2020-02-10",3],["2020-02-11",3],["2020-02-12",3],["2020-02-13",3],["2020-02-14",7],["2020-02-15",7],["2020-02-16",8],["2020-02-17",9],["2020-02-18",13],["2020-02-19",17],["2020-02-20",17],["2020-02-21",17],["2020-02-22",18],["2020-02-23",18],["2020-02-24",20],["2020-02-25",20],["2020-02-26",20],["2020-02-27",22],["2020-02-28",22],["2020-02-29",22],["2020-03-01",22],["2020-03-02",22],["2020-03-03",22],["2020-03-04",22],["2020-03-05",22],["2020-03-06",23],["2020-03-07",23],["2020-03-08",24],["2020-03-09",24],["2020-03-10",25],["2020-03-11",26],["2020-03-12",32],["2020-03-13",33],["2020-03-14",35],["2020-03-15",42],["2020-03-16",42],["2020-03-17",49],["2020-03-18",60],["2020-03-19",75],["2020-03-20",87],["2020-03-21",114],["2020-03-22",139],["2020-03-23",159],["2020-03-24",183],["2020-03-25",199],["2020-03-26",215],["2020-03-27",259],["2020-03-28",320],["2020-03-29",388],["2020-03-30",479],["2020-03-31",537],["2020-04-01",645],["2020-04-02",767],["2020-04-03",827],["2020-04-04",915],["2020-04-05",1005],["2020-04-06",1241],["2020-04-07",1321],["2020-04-08",1487],["2020-04-09",1608],["2020-04-10",1830],["2020-04-11",1995],["2020-04-12",2108],["2020-04-13",2276],["2020-04-14",2478],["2020-04-15",2647],["2020-04-16",2766],["2020-04-17",2967],["2020-04-18",3102],["2020-04-19",3197],["2020-04-20",3295],["2020-04-21",3349],["2020-04-22",3452],["2020-04-23",3542],["2020-04-24",3663],["2020-04-25",3762],["2020-04-26",3862],["2020-04-27",3957],["2020-04-28",4032],["2020-04-29",4087],["2020-04-30",4171],["2020-05-01",4210],["2020-05-02",4326],["2020-05-03",4413],["2020-05-04",4484],["2020-05-05",4567],["2020-05-06",4702],["2020-05-07",4776],["2020-05-08",4864],["2020-05-09",4929],["2020-05-10",5025],["2020-05-11",5113],["2020-05-12",5223],["2020-05-13",5281],["2020-05-14",5351],["2020-05-15",5439],["2020-05-16",5512],["2020-05-17",5571],["2020-05-18",5615],["2020-05-19",5646],["2020-05-20",5706],["2020-05-21",5796],["2020-05-22",5859],["2020-05-23",5912],["2020-05-24",5945],["2020-05-25",5979],["2020-05-26",6041],["2020-05-27",6083],["2020-05-28",6169],["2020-05-29",6235],["2020-05-30",6330],["2020-05-31",6353],["2020-06-01",6404],["2020-06-02",6470],["2020-06-03",6531],["2020-06-04",6559],["2020-06-05",6610],["2020-06-06",6635],["2020-06-07",6674],["2020-06-08",6694],["2020-06-09",6975],["2020-06-10",7014],["2020-06-11",7065],["2020-06-12",7168],["2020-06-13",7311],["2020-06-14",7346],["2020-06-15",7400],["2020-06-16",7733],["2020-06-17",7873],["2020-06-18",8000],["2020-06-19",8070],["2020-06-20",8146],["2020-06-21",8156],["2020-06-22",8177],["2020-06-23",8186],["2020-06-24",8231],["2020-06-25",8271],["2020-06-26",8294],["2020-06-27",8308],["2020-06-28",8318],["2020-06-29",8334],["2020-06-30",8354],["2020-07-01",8375],["2020-07-02",8437],["2020-07-03",8446],["2020-07-04",8461],["2020-07-05",8465],["2020-07-06",8476],["2020-07-07",8481],["2020-07-08",8486],["2020-07-09",8499],["2020-07-10",8511],["2020-07-11",8515],["2020-07-12",8519],["2020-07-13",8520],["2020-07-14",8524],["2020-07-15",8526],["2020-07-16",8538],["2020-07-17",8541],["2020-07-18",8546],["2020-07-19",8553],["2020-07-20",8555],["2020-07-21",8562],["2020-07-22",8566],["2020-07-23",8574],["2020-07-24",8577],["2020-07-25",8594],["2020-07-26",8600],["2020-07-27",8601],["2020-07-28",8607],["2020-07-29",8612],["2020-07-30",8617],["2020-07-31",8644],["2020-08-01",8647],["2020-08-02",8664],["2020-08-03",8668],["2020-08-04",8684],["2020-08-05",8702],["2020-08-06",8713],["2020-08-07",8728],["2020-08-08",8775],["2020-08-09",8784],["2020-08-10",8803],["2020-08-11",8809],["2020-08-12",8817],["2020-08-13",8821],["2020-08-14",8828],["2020-08-15",8831],["2020-08-16",8859],["2020-08-17",8876],["2020-08-18",8902],["2020-08-19",8925],["2020-08-20",8932],["2020-08-21",8945],["2020-08-22",8949],["2020-08-23",8959],["2020-08-24",8965],["2020-08-25",8971],["2020-08-26",8978],["2020-08-27",8994],["2020-08-28",9030],["2020-08-29",9038],["2020-08-30",9048]]},{"name":"Active","data":[["2020-01-24",3],["2020-01-25",4],["2020-01-26",4],["2020-01-27",4],["2020-01-28",7],["2020-01-29",7],["2020-01-30",8],["2020-01-31",8],["2020-02-01",8],["2020-02-02",8],["2020-02-03",8],["2020-02-04",9],["2020-02-05",11],["2020-02-06",13],["2020-02-07",14],["2020-02-08",14],["2020-02-09",14],["2020-02-10",15],["2020-02-11",15],["2020-02-12",15],["2020-02-13",16],["2020-02-14",12],["2020-02-15",15],["2020-02-16",14],["2020-02-17",13],["2020-02-18",9],["2020-02-19",5],["2020-02-20",5],["2020-02-21",5],["2020-02-22",4],["2020-02-23",4],["2020-02-24",2],["2020-02-25",2],["2020-02-26",2],["2020-02-27",2],["2020-02-28",3],["2020-02-29",7],["2020-03-01",7],["2020-03-02",11],["2020-03-03",14],["2020-03-04",28],["2020-03-05",33],["2020-03-06",60],["2020-03-07",70],["2020-03-08",75],["2020-03-09",93],["2020-03-10",104],["2020-03-11",123],["2020-03-12",126],["2020-03-13",164],["2020-03-14",203],["2020-03-15",386],["2020-03-16",511],["2020-03-17",622],["2020-03-18",728],["2020-03-19",823],["2020-03-20",941],["2020-03-21",1065],["2020-03-22",1157],["2020-03-23",1345],["2020-03-24",1426],["2020-03-25",1578],["2020-03-26",1793],["2020-03-27",1876],["2020-03-28",1973],["2020-03-29",2048],["2020-03-30",2110],["2020-03-31",2186],["2020-04-01",2218],["2020-04-02",2299],["2020-04-03",2453],["2020-04-04",2511],["2020-04-05",2596],["2020-04-06",2490],["2020-04-07",2579],["2020-04-08",2567],["2020-04-09",2553],["2020-04-10",2446],["2020-04-11",2462],["2020-04-12",2499],["2020-04-13",2464],["2020-04-14",2427],["2020-04-15",2342],["2020-04-16",2332],["2020-04-17",2198],["2020-04-18",2115],["2020-04-19",2103],["2020-04-20",2041],["2020-04-21",2041],["2020-04-22",1987],["2020-04-23",1966],["2020-04-24",1932],["2020-04-25",1882],["2020-04-26",1820],["2020-04-27",1764],["2020-04-28",1719],["2020-04-29",1758],["2020-04-30",1729],["2020-05-01",1758],["2020-05-02",1747],["2020-05-03",1780],["2020-05-04",1764],["2020-05-05",1710],["2020-05-06",1619],["2020-05-07",1584],["2020-05-08",1564],["2020-05-09",1552],["2020-05-10",1523],["2020-05-11",1504],["2020-05-12",1410],["2020-05-13",1387],["2020-05-14",1356],["2020-05-15",1304],["2020-05-16",1247],["2020-05-17",1210],["2020-05-18",1213],["2020-05-19",1218],["2020-05-20",1189],["2020-05-21",1149],["2020-05-22",1163],["2020-05-23",1158],["2020-05-24",1185],["2020-05-25",1323],["2020-05-26",1448],["2020-05-27",1421],["2020-05-28",1345],["2020-05-29",1382],["2020-05-30",1317],["2020-05-31",1351],["2020-06-01",1338],["2020-06-02",1292],["2020-06-03",1324],["2020-06-04",1573],["2020-06-05",1540],["2020-06-06",1551],["2020-06-07",1531],["2020-06-08",1518],["2020-06-09",1244],["2020-06-10",1206],["2020-06-11",1186],["2020-06-12",1115],["2020-06-13",1014],["2020-06-14",986],["2020-06-15",973],["2020-06-16",651],["2020-06-17",521],["2020-06-18",408],["2020-06-19",344],["2020-06-20",289],["2020-06-21",295],["2020-06-22",289],["2020-06-23",283],["2020-06-24",244],["2020-06-25",208],["2020-06-26",191],["2020-06-27",187],["2020-06-28",195],["2020-06-29",182],["2020-06-30",164],["2020-07-01",144],["2020-07-02",85],["2020-07-03",81],["2020-07-04",76],["2020-07-05",77],["2020-07-06",71],["2020-07-07",72],["2020-07-08",70],["2020-07-09",63],["2020-07-10",64],["2020-07-11",67],["2020-07-12",77],["2020-07-13",83],["2020-07-14",83],["2020-07-15",86],["2020-07-16",77],["2020-07-17",92],["2020-07-18",96],["2020-07-19",103],["2020-07-20",122],["2020-07-21",130],["2020-07-22",142],["2020-07-23",143],["2020-07-24",161],["2020-07-25",167],["2020-07-26",173],["2020-07-27",179],["2020-07-28",212],["2020-07-29",220],["2020-07-30",223],["2020-07-31",207],["2020-08-01",213],["2020-08-02",210],["2020-08-03",208],["2020-08-04",193],["2020-08-05",196],["2020-08-06",200],["2020-08-07",210],["2020-08-08",170],["2020-08-09",174],["2020-08-10",166],["2020-08-11",169],["2020-08-12",172],["2020-08-13",183],["2020-08-14",196],["2020-08-15",219],["2020-08-16",216],["2020-08-17",211],["2020-08-18",192],["2020-08-19",185],["2020-08-20",183],["2020-08-21",179],["2020-08-22",183],["2020-08-23",183],["2020-08-24",184],["2020-08-25",189],["2020-08-26",188],["2020-08-27",177],["2020-08-28",151],["2020-08-29",154],["2020-08-30",160]]}],
+          type: "line",
+          width: "100%",
+          height: "400"
+      }
+  }
+});
+}, 500);
+
+
+jQuery('#w1').yiiGridView({"filterUrl":"\/en","filterSelector":"#w1-filters input, #w1-filters select","filterOnFocusOut":true});
+jQuery(document).pjax("#p0 a", {"push":true,"replace":false,"timeout":1000,"scrollTo":false,"container":"#p0"});
+jQuery(document).off("submit", "#p0 form[data-pjax]").on("submit", "#p0 form[data-pjax]", function (event) {jQuery.pjax.submit(event, {"push":true,"replace":false,"timeout":1000,"scrollTo":false,"container":"#p0"});});
+jQuery('time[data-toggle="timeago"]').timeago();
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+}); 
+});
+</script>
+
