@@ -26,6 +26,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Instructions to create postgresql with docker 
+1. Pull docker image 
+   ```
+   docker pull postgres
+   ```
+2. run docker container
+   ```
+    docker run --name covid19-postgres -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+   ```
+
 ## Instructions for running the website locally:
 
 Run the server and open localhost on a web browser:
